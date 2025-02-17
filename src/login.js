@@ -9,6 +9,7 @@ function Login() {
         email: "",
         password: ""
     });
+    
     const navigate = useNavigate();
     const [errors, setErrors] = useState({});
     

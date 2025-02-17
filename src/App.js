@@ -4,8 +4,6 @@ import Login from './login';
 import React from 'react';
 import Home from './home';
 
-
-
 function App() {
   return (
     <BrowserRouter>
