@@ -1,0 +1,84 @@
+
+.sidebar h2 {
+  color: #ffffff;
+  margin-top: 120px; /* เพิ่มระยะห่างจากโลโก้ */
+}
+.sidebar {
+  width: 250px;
+  background: #253D90;
+  color: rgb(203, 203, 203);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  position: fixed;  
+  left: 0;
+  top: 0;
+}
+.sidebar h4{
+  font-size: 12px;
+}
+
+.main-content {
+  margin-left: 250px; 
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background: #9fb6cb;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Log Out อยู่ล่างสุด */
+.logout-container {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 10px;
+  background: #ff3a08;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-button:hover {
+  background: #e63206;
+}
+.main-content{
+  background: #ffffff;
+}
+.logo {
+  background: url('./assets/logo.png')no-repeat center center/contain;
+  height: 100px;
+  padding-bottom: 0;
+  position: absolute;
+  left: 20px; 
+  margin: 0;
+  top: 20px;  
+}
+.home-container h2 {
+  color: #ffffff;
+  margin-top: 125px; /*เว้นระยะจากlogo*/
+}
+

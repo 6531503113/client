@@ -1,0 +1,107 @@
+.signup-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.signup-form {
+    flex: 1;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.signup-image {
+    flex: 1;
+    order: 1;
+    width: 50%;
+    background: url('./assets/work1.png') no-repeat center center/cover;
+    position: relative;
+    z-index: 1; /* เพิ่ม z-index ให้ต่ำกว่าของ .logo */
+}
+
+.logo {
+    background: url('./assets/logo.png') no-repeat center center/contain;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    z-index: 2; /* เพิ่ม z-index ให้สูงกว่าของ .signup-image */
+}
+
+
+.signup-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 139, 0.5); /* สีฟ้าเข้ม */
+}
+
+.password-container {
+    display: flex;
+    gap: 1rem; 
+    width: 100%;
+}
+
+.password-field {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+.name-container {
+    display: flex;
+    gap: 1rem; 
+    width: 100%;
+}
+
+.name-field {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+.email-container {
+    display: flex;
+    gap: 1rem; 
+    width: 100%;
+}
+
+.email-field {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.signup-form h2 {
+    color: #253D90;
+    margin-left: 50px; 
+    text-align: center; 
+    font-size: 2.5rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.signup-form p {
+    color: #7F8C8D;
+    margin-left: 53px;  
+    text-align: center; 
+    font-size: 1rem; 
+    margin-bottom: 1.5rem; 
+}
+.logo {
+    background: url('./assets/logo.png')no-repeat center center/contain;
+    width: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 20px;  
+    left: 20px; 
+    margin: 0;  
+  }
